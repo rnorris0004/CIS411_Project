@@ -32,5 +32,7 @@ namespace CIS411_Project.Models
         public int CATEGORY_ID { get; set; }
 
         public int USER_ID { get; set; }
+
+
     }
 }
