@@ -8,6 +8,13 @@
         @System.Web.Optimization.Styles.Render("~/Content/Site.css")
     </head>
  <body>
-     @RenderBody()
+    
+     <header></header>
+     <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
  </body>
 </html>
