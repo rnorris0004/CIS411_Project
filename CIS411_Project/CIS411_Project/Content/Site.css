@@ -38,6 +38,9 @@ footer {
     height: 100px;
 }
 
+.float-right {
+    float: right;
+}
 /* site title
 ----------------------------------------------------------*/
 .site-title {
