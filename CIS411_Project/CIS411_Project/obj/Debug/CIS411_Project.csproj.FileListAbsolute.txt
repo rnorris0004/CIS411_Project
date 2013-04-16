@@ -21,7 +21,6 @@ C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\System.Web.WebPages.xml
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\System.Web.WebPages.Razor.xml
-C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\obj\Debug\CIS411_Project.csprojResolveAssemblyReference.cache
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\obj\Debug\CIS411_Project.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\obj\Debug\CIS411_Project.pdb
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Antlr3.Runtime.dll

@@ -41,6 +41,10 @@ footer {
 .float-right {
     float: right;
 }
+
+.Searchbar {
+    align-self: center;
+}
 /* site title
 ----------------------------------------------------------*/
 .site-title {

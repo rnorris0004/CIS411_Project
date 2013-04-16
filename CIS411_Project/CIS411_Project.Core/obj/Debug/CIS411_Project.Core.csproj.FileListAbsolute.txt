@@ -1,0 +1,4 @@
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.Core.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.Core.pdb
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.pdb
