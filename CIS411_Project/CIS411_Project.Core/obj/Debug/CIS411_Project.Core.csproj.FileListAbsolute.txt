@@ -2,3 +2,8 @@ C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.Core.pdb
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.pdb
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.Core.dll
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.Core.pdb
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.dll
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.pdb
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.csprojResolveAssemblyReference.cache
