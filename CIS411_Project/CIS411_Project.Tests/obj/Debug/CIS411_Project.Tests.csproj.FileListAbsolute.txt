@@ -55,3 +55,4 @@ C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Tests\obj\Debug\CIS411_Project.Tests.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Tests\obj\Debug\CIS411_Project.Tests.pdb
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Tests\obj\Debug\CIS411_Project.Tests.csprojResolveAssemblyReference.cache

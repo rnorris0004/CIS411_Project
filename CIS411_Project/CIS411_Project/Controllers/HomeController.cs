@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-//changed this
-using CIS411_Project;
+using CIS411_Project.Core.Models;
+
 
 namespace CIS411_Project.Controllers
 {
@@ -14,7 +14,7 @@ namespace CIS411_Project.Controllers
         public ActionResult Index()
         {
            
-            ViewBag.Message = "";
+            @ViewBag.Message = "";
 
             return View();
         }
