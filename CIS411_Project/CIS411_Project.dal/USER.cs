@@ -23,6 +23,7 @@ namespace CIS411_Project.dal
         public string USER_FNAME { get; set; }
         public string USER_LNAME { get; set; }
         public string USER_DISPLAYNAME { get; set; }
+        public string PASSWORD { get; set; }
         public int REPUTATION { get; set; }
         public string USER_EMAIL { get; set; }
         public byte[] CREATED_TIMESTAMP { get; set; }
