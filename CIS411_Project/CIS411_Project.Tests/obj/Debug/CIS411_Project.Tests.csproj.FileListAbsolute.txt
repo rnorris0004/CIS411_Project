@@ -62,3 +62,5 @@ C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Tests\bin\Debug\CIS411_Project.Core.pdb
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Tests\bin\Debug\CIS411_Project.dal.pdb
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Tests\bin\Debug\Helpers.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Tests\bin\Debug\Helpers.pdb

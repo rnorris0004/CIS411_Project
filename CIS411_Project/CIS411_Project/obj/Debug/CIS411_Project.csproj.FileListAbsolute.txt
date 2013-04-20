@@ -69,3 +69,5 @@ C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\obj\Debug\CIS411_Project.csprojResolveAssemblyReference.cache
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.dal.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.dal.pdb
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Helpers.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Helpers.pdb

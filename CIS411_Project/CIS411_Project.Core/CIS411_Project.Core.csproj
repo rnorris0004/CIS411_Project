@@ -59,6 +59,10 @@
       <Project>{e2051cd9-cd0a-4046-8bc5-acc2bf94a72e}</Project>
       <Name>CIS411_Project.dal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Helpers\Helpers.csproj">
+      <Project>{17970cf7-aa96-49c3-be89-07ea6ae8b276}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIS411_Project.Core", "CIS4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIS411_Project.dal", "CIS411_Project.dal\CIS411_Project.dal.csproj", "{E2051CD9-CD0A-4046-8BC5-ACC2BF94A72E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{17970CF7-AA96-49C3-BE89-07EA6AE8B276}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{E2051CD9-CD0A-4046-8BC5-ACC2BF94A72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2051CD9-CD0A-4046-8BC5-ACC2BF94A72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2051CD9-CD0A-4046-8BC5-ACC2BF94A72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17970CF7-AA96-49C3-BE89-07EA6AE8B276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17970CF7-AA96-49C3-BE89-07EA6AE8B276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17970CF7-AA96-49C3-BE89-07EA6AE8B276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17970CF7-AA96-49C3-BE89-07EA6AE8B276}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

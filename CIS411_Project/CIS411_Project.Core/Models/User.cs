@@ -34,16 +34,16 @@ namespace CIS411_Project.Core.Models
 
         [Display(Name = "Remember on this computer")]
         public bool RememberMe { get; set; }
-    
 
-    public bool IsValid(string _username, string _password)
+
+        public bool IsValid(string _username, string _password)
         {
             using (var cn = new SqlConnection(@"Data Source=tfs.wesleyreisz.com;Initial Catalog=student6;" +
                    @"Persist Security Info=True;User ID=student6;Password=student6;" +
-                   @"MultipleActiveResultSets=True;Application Name=EntityFramework")) 
+                   @"MultipleActiveResultSets=True;Application Name=EntityFramework"))
             {
-                string _sql = @"SELECT [Username] FROM [dbo].[System_Users] " + 
-                       @"WHERE [Username] = @u AND [Password] = @p";
+                string _sql = @"SELECT [USER_DISPLAYNAME] FROM [student6].[USER] " +
+                       @"WHERE [USER_DISPLAYNAME] = @u AND [PASSWORD] = @p";
                 var cmd = new SqlCommand(_sql, cn);
                 cmd.Parameters
                     .Add(new SqlParameter("@u", SqlDbType.NVarChar))
@@ -66,5 +66,6 @@ namespace CIS411_Project.Core.Models
                     return false;
                 }
             }
+        }
     }
 }
