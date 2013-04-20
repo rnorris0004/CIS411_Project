@@ -9,96 +9,107 @@ using CIS411_Project.dal.Repositories;
 
 namespace CIS411_Project.Core.Services
 {
-    public interface BookService : CIS411_Project.Core.Services.IService
+    public class BookService : CIS411_Project.Core.Services.IService
     {
         /*
          * books = book class
          * BOOK  = Book Table
         */
-        public ICollection<Books> listBooksByUser(int userId){
+        public ICollection<Books> listBooksByUser(int userId)
+        {
             BookRepo BookRepo = new BookRepo();
-            IEnumerable<BOOK> booksByUser = BookRepo.query(p => p.USER_ID == userId);
+            IEnumerable<BOOK> books = BookRepo.query(p => p.USER_ID == userId);
 
-            ICollection<Books> books = new List<Books>();
+            ICollection<Books> bookList = new List<Books>();
             Books book = null;
-            foreach (BOOK p1 in books)
+            foreach (BOOK b1 in books)
             {
                 book = new Books();
-                book.BOOK_ID = p1.BOOK_ID;
-                book.BOOK_TITLE = p1.BOOK_TITLE;
-                book.BOOK_DESC = p1.BOOK_DESC;
+                book.BOOK_ID = b1.BOOK_ID;
+                book.BOOK_TITLE = b1.BOOK_TITLE;
+                book.BOOK_DESC = b1.BOOK_DESC;
                 book.USER_ID = userId;
-                book.BOOK_AUTHOR = p1.BOOK_AUTHOR;
-                book.BOOK_EDITION = p1.BOOK_EDITION;
-                book.BOOK_PRICE = p1.BOOK_PRICE;
-                book.BOOK_PUBLISHER = p1.BOOK_PUBLISHER;
-                book.CATEGORY_ID = p1.CATEGORY_ID;
-                book.CONDITION_ID = p1.CONDITION_ID;
-                book.CREATED_TIMESTAMP = p1.CREATED_TIMESTAMP;
+                book.BOOK_AUTHOR = b1.BOOK_AUTHOR;
+                book.BOOK_EDITION = b1.BOOK_EDITION;
+                book.BOOK_PRICE = b1.BOOK_PRICE;
+                book.BOOK_PUBLISHER = b1.BOOK_PUBLISHER;
+                book.CATEGORY_ID = b1.CATEGORY_ID;
+                book.CONDITION_ID = b1.CONDITION_ID;
+                book.CREATED_TIMESTAMP = b1.CREATED_TIMESTAMP;
                 
-                books.Add(book);
+                bookList.Add(book);
             }
             BookRepo = null;
-            return books;
+            return bookList;
         }
 
         public ICollection<Books> listBooks()
         {
             BookRepo BookRepo = new BookRepo();
-            IEnumerable<Books> books = BookRepo.getAll();
+            IEnumerable<BOOK> books = BookRepo.getAll();
 
-            ICollection<Books> phoneModels = new List<Books>();
-            Books phoneModel = null;
-            foreach (Phone phoneData in phones)
+            ICollection<Books> bookList = new List<Books>();
+            Books book = null;
+            foreach (BOOK b2 in books)
             {
-                phoneModel = new PhoneModel();
-                phoneModel.phoneCd = phoneData.PHONE_CD;
-                phoneModel.phoneNumber = phoneData.PHONE_TX;
-                phoneModel.lastModifiedDate = phoneData.MOD_DT;
-                phoneModel.applicantId = phoneData.APPLICANT_ID;
-                phoneModel.createDate = phoneData.CREATE_DT;
-                phoneModel.phoneId = phoneData.PHONE_ID;
+                book = new Books();
+                book.BOOK_ID = b2.BOOK_ID;
+                book.BOOK_TITLE = b2.BOOK_TITLE;
+                book.BOOK_DESC = b2.BOOK_DESC;
+                book.USER_ID = b2.USER_ID;
+                book.BOOK_AUTHOR = b2.BOOK_AUTHOR;
+                book.BOOK_EDITION = b2.BOOK_EDITION;
+                book.BOOK_PRICE = b2.BOOK_PRICE;
+                book.BOOK_PUBLISHER = b2.BOOK_PUBLISHER;
+                book.CATEGORY_ID = b2.CATEGORY_ID;
+                book.CONDITION_ID = b2.CONDITION_ID;
+                book.CREATED_TIMESTAMP = b2.CREATED_TIMESTAMP;
 
-                phoneModels.Add(phoneModel);
+                bookList.Add(book);
             }
-            phoneRepo = null;
-            return phoneModels;
+            BookRepo = null;
+            return bookList;
         }
 
 
-        public PhoneModel getPhoneById(decimal phoneId)
+        public Books getBookById(int bookId)
         {
-            PhoneRepo phoneRepo = new PhoneRepo();
-            Phone phoneData = phoneRepo.getById(new Phone{PHONE_ID=phoneId});
-            PhoneModel phoneModel = new PhoneModel();
-            phoneModel.phoneId = phoneData.PHONE_ID;
-            phoneModel.applicantId = phoneData.APPLICANT_ID;
-            phoneModel.createDate = phoneData.CREATE_DT;
-            phoneModel.lastModifiedDate = phoneData.MOD_DT;
-            phoneModel.phoneCd = phoneData.PHONE_CD;
-            phoneModel.phoneNumber = phoneData.PHONE_TX;
+            BookRepo bookRepo = new BookRepo();
+            BOOK b3 = bookRepo.getById(new BOOK{BOOK_ID=bookId});
+            Books book = new Books();
+            book.BOOK_ID = b3.BOOK_ID;
+            book.BOOK_TITLE = b3.BOOK_TITLE;
+            book.BOOK_DESC = b3.BOOK_DESC;
+            book.USER_ID = b3.USER_ID;
+            book.BOOK_AUTHOR = b3.BOOK_AUTHOR;
+            book.BOOK_EDITION = b3.BOOK_EDITION;
+            book.BOOK_PRICE = b3.BOOK_PRICE;
+            book.BOOK_PUBLISHER = b3.BOOK_PUBLISHER;
+            book.CATEGORY_ID = b3.CATEGORY_ID;
+            book.CONDITION_ID = b3.CONDITION_ID;
+            book.CREATED_TIMESTAMP = b3.CREATED_TIMESTAMP;
 
-            return phoneModel;
+            return book;
         }
 
 
 
 
-        public ICollection<PhoneCodeModel> getPhoneCds()
-        {
-            ICollection<PhoneCodeModel> codeModels = new List<PhoneCodeModel>();
+        //public ICollection<PhoneCodeModel> getPhoneCds()
+        //{
+        //    ICollection<PhoneCodeModel> codeModels = new List<PhoneCodeModel>();
 
-            PhoneCodeRepo repo = new PhoneCodeRepo();
-            PhoneCD[] codes = repo.getAll();
-            foreach (PhoneCD codeData in codes)
-            {
-                PhoneCodeModel codeModel = new PhoneCodeModel();
-                codeModel.lastModifiedDate = codeData.MOD_DT;
-                codeModel.phoneCode = codeData.PHONE_CD;
-                codeModel.phoneCodeDescription = codeData.PHONE_TX;
-                codeModels.Add(codeModel);
-            }
-            return codeModels;
-        }
+        //    PhoneCodeRepo repo = new PhoneCodeRepo();
+        //    PhoneCD[] codes = repo.getAll();
+        //    foreach (PhoneCD codeData in codes)
+        //    {
+        //        PhoneCodeModel codeModel = new PhoneCodeModel();
+        //        codeModel.lastModifiedDate = codeData.MOD_DT;
+        //        codeModel.phoneCode = codeData.PHONE_CD;
+        //        codeModel.phoneCodeDescription = codeData.PHONE_TX;
+        //        codeModels.Add(codeModel);
+        //    }
+        //    return codeModels;
+        //}
     }
 }

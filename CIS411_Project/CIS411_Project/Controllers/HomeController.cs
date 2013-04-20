@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using CIS411_Project.Core.Models;
+using CIS411_Project.Core.Services;
 
 
 namespace CIS411_Project.Controllers
@@ -13,10 +14,12 @@ namespace CIS411_Project.Controllers
         
         public ActionResult Index()
         {
-           
-            @ViewBag.Message = "";
 
-            return View();
+            IService service = new BookService();
+            ICollection<Books> books = service.listBooks();
+            return View(books);
+
+           
         }
 
         public ActionResult About()
