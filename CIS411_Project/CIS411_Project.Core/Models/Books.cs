@@ -8,7 +8,7 @@ namespace CIS411_Project.Core.Models
 {
     public class Books
     {
-        public int BOOK_ID { get; set; }
+        public decimal BOOK_ID { get; set; }
 
         public string BOOK_TITLE { get; set; }
 
@@ -16,7 +16,7 @@ namespace CIS411_Project.Core.Models
 
         public string BOOK_AUTHOR { get; set; }
    
-        public Nullable<int> BOOK_EDITION { get; set; }
+        public Nullable<decimal> BOOK_EDITION { get; set; }
 
         public string BOOK_PUBLISHER { get; set; }
       
@@ -24,15 +24,15 @@ namespace CIS411_Project.Core.Models
    
         public Nullable<decimal> ISBN13 { get; set; }
 
-        public int CONDITION_ID { get; set; }
+        public decimal CONDITION_ID { get; set; }
 
-        public int CATEGORY_ID { get; set; }
+        public decimal CATEGORY_ID { get; set; }
 
-        public int USER_ID { get; set; }
+        public decimal USER_ID { get; set; }
 
-        public decimal BOOK_PRICE { get; set; }
+        public Nullable<decimal> BOOK_PRICE { get; set; }
 
-        public DateTime CREATED_TIMESTAMP { get; set; }
+        public Nullable<DateTime> CREATED_TIMESTAMP { get; set; }
         
 
 

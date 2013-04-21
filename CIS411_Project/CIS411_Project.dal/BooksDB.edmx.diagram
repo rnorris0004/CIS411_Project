@@ -4,15 +4,22 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="bd1e3d7481a64ee8882287c4f6a82268" Name="Diagram1">
+      <Diagram DiagramId="fd119d0885ec42fba12d8c26a4d30ffe" Name="Diagram1">
         <EntityTypeShape EntityType="BooksDBModel.BOOK" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="BooksDBModel.CATEGORY" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BooksDBModel.CONDITION" Width="1.5" PointX="0.5" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BooksDBModel.sysdiagram" Width="1.5" PointX="5.375" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BooksDBModel.USER" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BooksDBModel.CATEGORY" Width="1.5" PointX="0.625" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BooksDBModel.CONDITION" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BooksDBModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BooksDBModel.USER" Width="1.5" PointX="5.625" PointY="4" IsExpanded="true" />
         <AssociationConnector Association="BooksDBModel.FK_BOOK_CATEGORY" ManuallyRouted="false" />
         <AssociationConnector Association="BooksDBModel.FK_BOOK_CONDITION" ManuallyRouted="false" />
         <AssociationConnector Association="BooksDBModel.FK_BOOK_USER" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BooksDBModel.BOOK1" Width="1.5" PointX="8.127578374057812" PointY="8.1470528580933124" />
+        <EntityTypeShape EntityType="BooksDBModel.CATEGORY1" Width="1.5" PointX="11.394802925826424" PointY="30.741285964260477" />
+        <EntityTypeShape EntityType="BooksDBModel.CONDITION1" Width="1.5" PointX="5.173739899496427" PointY="20.204325178733246" />
+        <EntityTypeShape EntityType="BooksDBModel.USER1" Width="1.5" PointX="9.2641816554889935" PointY="2.5753969413113764" />
+        <AssociationConnector Association="BooksDBModel.FK_BOOK_CATEGORY1" />
+        <AssociationConnector Association="BooksDBModel.FK_BOOK_CONDITION1" />
+        <AssociationConnector Association="BooksDBModel.FK_BOOK_USER1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

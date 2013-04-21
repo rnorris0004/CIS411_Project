@@ -1,56 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="BooksDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityContainer Name="BooksDBModelStoreContainer">
-    <EntitySet Name="BOOK" EntityType="BooksDBModel.Store.BOOK" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="CATEGORY" EntityType="BooksDBModel.Store.CATEGORY" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="CONDITION" EntityType="BooksDBModel.Store.CONDITION" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BOOKs" EntityType="BooksDBModel.Store.BOOKs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CATEGORies" EntityType="BooksDBModel.Store.CATEGORies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CONDITIONs" EntityType="BooksDBModel.Store.CONDITIONs" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="sysdiagrams" EntityType="BooksDBModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="USER" EntityType="BooksDBModel.Store.USER" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="USERs" EntityType="BooksDBModel.Store.USERs" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="FK_BOOK_CATEGORY" Association="BooksDBModel.Store.FK_BOOK_CATEGORY">
-      <End Role="CATEGORY" EntitySet="CATEGORY" />
-      <End Role="BOOK" EntitySet="BOOK" />
+      <End Role="CATEGORY" EntitySet="CATEGORies" />
+      <End Role="BOOK" EntitySet="BOOKs" />
     </AssociationSet>
     <AssociationSet Name="FK_BOOK_CONDITION" Association="BooksDBModel.Store.FK_BOOK_CONDITION">
-      <End Role="CONDITION" EntitySet="CONDITION" />
-      <End Role="BOOK" EntitySet="BOOK" />
+      <End Role="CONDITION" EntitySet="CONDITIONs" />
+      <End Role="BOOK" EntitySet="BOOKs" />
     </AssociationSet>
     <AssociationSet Name="FK_BOOK_USER" Association="BooksDBModel.Store.FK_BOOK_USER">
-      <End Role="USER" EntitySet="USER" />
-      <End Role="BOOK" EntitySet="BOOK" />
+      <End Role="USER" EntitySet="USERs" />
+      <End Role="BOOK" EntitySet="BOOKs" />
     </AssociationSet>
   </EntityContainer>
-  <EntityType Name="BOOK">
+  <EntityType Name="BOOKs">
     <Key>
       <PropertyRef Name="BOOK_ID" />
     </Key>
-    <Property Name="BOOK_ID" Type="int" Nullable="false" />
-    <Property Name="BOOK_TITLE" Type="nvarchar" MaxLength="50" />
-    <Property Name="BOOK_DESC" Type="nvarchar(max)" />
-    <Property Name="BOOK_AUTHOR" Type="nvarchar" MaxLength="50" />
-    <Property Name="BOOK_EDITION" Type="int" />
-    <Property Name="BOOK_PUBLISHER" Type="nvarchar" MaxLength="50" />
-    <Property Name="ISBN10" Type="numeric" Precision="10" />
-    <Property Name="ISBN13" Type="numeric" Precision="13" />
-    <Property Name="CONDITION_ID" Type="int" Nullable="false" />
-    <Property Name="CATEGORY_ID" Type="int" Nullable="false" />
-    <Property Name="USER_ID" Type="int" Nullable="false" />
-    <Property Name="BOOK_PRICE" Type="money" Nullable="false" />
-    <Property Name="CREATED_TIMESTAMP" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="BOOK_ID" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="BOOK_TITLE" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="BOOK_DESC" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="BOOK_AUTHOR" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="BOOK_EDITION" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="ISBN10" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="ISBN13" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="CONDITION_ID" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="CATEGORY_ID" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="USER_ID" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="BOOK_PRICE" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="CREATED_TIMESTAMP" Type="datetime" Nullable="true" />
+    <Property Name="BOOK_PUBLISHER" Type="nvarchar" Nullable="true" MaxLength="50" />
   </EntityType>
-  <EntityType Name="CATEGORY">
+  <EntityType Name="CATEGORies">
     <Key>
       <PropertyRef Name="CATEGORY_ID" />
     </Key>
-    <Property Name="CATEGORY_ID" Type="int" Nullable="false" />
-    <Property Name="CATEGORY_NAME" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="CATEGORY_ID" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="CATEGORY_NAME" Type="nvarchar" Nullable="true" MaxLength="50" />
   </EntityType>
-  <EntityType Name="CONDITION">
+  <EntityType Name="CONDITIONs">
     <Key>
       <PropertyRef Name="CONDITION_ID" />
     </Key>
-    <Property Name="CONDITION_ID" Type="int" Nullable="false" />
-    <Property Name="CONDITION_NAME" Type="nchar" Nullable="false" MaxLength="50" />
-    <Property Name="CONDITION_DESC" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CONDITION_ID" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="CONDITION_NAME" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="CONDITION_DESC" Type="nvarchar(max)" Nullable="true" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -58,25 +58,26 @@
     </Key>
     <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
     <Property Name="principal_id" Type="int" Nullable="false" />
-    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="int" />
-    <Property Name="definition" Type="varbinary(max)" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" Nullable="true" />
+    <Property Name="definition" Type="varbinary(max)" Nullable="true" />
   </EntityType>
-  <EntityType Name="USER">
+  <EntityType Name="USERs">
     <Key>
       <PropertyRef Name="USER_ID" />
     </Key>
-    <Property Name="USER_ID" Type="int" Nullable="false" />
-    <Property Name="USER_FNAME" Type="nchar" Nullable="false" MaxLength="25" />
-    <Property Name="USER_LNAME" Type="nchar" Nullable="false" MaxLength="25" />
-    <Property Name="USER_DISPLAYNAME" Type="nchar" Nullable="false" MaxLength="25" />
-    <Property Name="REPUTATION" Type="int" Nullable="false" />
-    <Property Name="USER_EMAIL" Type="nchar" Nullable="false" MaxLength="50" />
-    <Property Name="CREATED_TIMESTAMP" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="USER_ID" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="USER_FNAME" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="USER_LNAME" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="USER_DISPLAYNAME" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="PASSWORD" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="REPUTATION" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="USER_EMAIL" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="CREATED_TIMESTAMP" Type="datetime" Nullable="true" />
   </EntityType>
   <Association Name="FK_BOOK_CATEGORY">
-    <End Role="CATEGORY" Type="BooksDBModel.Store.CATEGORY" Multiplicity="1" />
-    <End Role="BOOK" Type="BooksDBModel.Store.BOOK" Multiplicity="*" />
+    <End Role="CATEGORY" Type="BooksDBModel.Store.CATEGORies" Multiplicity="1" />
+    <End Role="BOOK" Type="BooksDBModel.Store.BOOKs" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CATEGORY">
         <PropertyRef Name="CATEGORY_ID" />
@@ -87,8 +88,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_BOOK_CONDITION">
-    <End Role="CONDITION" Type="BooksDBModel.Store.CONDITION" Multiplicity="1" />
-    <End Role="BOOK" Type="BooksDBModel.Store.BOOK" Multiplicity="*" />
+    <End Role="CONDITION" Type="BooksDBModel.Store.CONDITIONs" Multiplicity="1" />
+    <End Role="BOOK" Type="BooksDBModel.Store.BOOKs" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CONDITION">
         <PropertyRef Name="CONDITION_ID" />
@@ -99,8 +100,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_BOOK_USER">
-    <End Role="USER" Type="BooksDBModel.Store.USER" Multiplicity="1" />
-    <End Role="BOOK" Type="BooksDBModel.Store.BOOK" Multiplicity="*" />
+    <End Role="USER" Type="BooksDBModel.Store.USERs" Multiplicity="1" />
+    <End Role="BOOK" Type="BooksDBModel.Store.BOOKs" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="USER">
         <PropertyRef Name="USER_ID" />

@@ -23,39 +23,39 @@
     <Key>
       <PropertyRef Name="BOOK_ID" />
     </Key>
-    <Property Name="BOOK_ID" Type="Int32" Nullable="false" />
+    <Property Name="BOOK_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
     <Property Name="BOOK_TITLE" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="BOOK_DESC" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
     <Property Name="BOOK_AUTHOR" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-    <Property Name="BOOK_EDITION" Type="Int32" />
-    <Property Name="BOOK_PUBLISHER" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-    <Property Name="ISBN10" Type="Decimal" Precision="10" Scale="0" />
-    <Property Name="ISBN13" Type="Decimal" Precision="13" Scale="0" />
-    <Property Name="CONDITION_ID" Type="Int32" Nullable="false" />
-    <Property Name="CATEGORY_ID" Type="Int32" Nullable="false" />
-    <Property Name="USER_ID" Type="Int32" Nullable="false" />
-    <Property Name="BOOK_PRICE" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
-    <Property Name="CREATED_TIMESTAMP" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="BOOK_EDITION" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ISBN10" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ISBN13" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CONDITION_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CATEGORY_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="USER_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BOOK_PRICE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CREATED_TIMESTAMP" Type="DateTime" Precision="3" />
     <NavigationProperty Name="CATEGORY" Relationship="BooksDBModel.FK_BOOK_CATEGORY" FromRole="BOOK" ToRole="CATEGORY" />
     <NavigationProperty Name="CONDITION" Relationship="BooksDBModel.FK_BOOK_CONDITION" FromRole="BOOK" ToRole="CONDITION" />
     <NavigationProperty Name="USER" Relationship="BooksDBModel.FK_BOOK_USER" FromRole="BOOK" ToRole="USER" />
+    <Property Type="String" Name="BOOK_PUBLISHER" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="CATEGORY">
     <Key>
       <PropertyRef Name="CATEGORY_ID" />
     </Key>
-    <Property Name="CATEGORY_ID" Type="Int32" Nullable="false" />
-    <Property Name="CATEGORY_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
+    <Property Name="CATEGORY_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="CATEGORY_NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <NavigationProperty Name="BOOKs" Relationship="BooksDBModel.FK_BOOK_CATEGORY" FromRole="CATEGORY" ToRole="BOOK" />
   </EntityType>
   <EntityType Name="CONDITION">
     <Key>
       <PropertyRef Name="CONDITION_ID" />
     </Key>
-    <Property Name="CONDITION_ID" Type="Int32" Nullable="false" />
-    <Property Name="CONDITION_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
-    <Property Name="CONDITION_DESC" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CONDITION_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="CONDITION_NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <NavigationProperty Name="BOOKs" Relationship="BooksDBModel.FK_BOOK_CONDITION" FromRole="CONDITION" ToRole="BOOK" />
+    <Property Type="String" Name="CONDITION_DESC" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="sysdiagram">
     <Key>
@@ -71,13 +71,14 @@
     <Key>
       <PropertyRef Name="USER_ID" />
     </Key>
-    <Property Name="USER_ID" Type="Int32" Nullable="false" />
-    <Property Name="USER_FNAME" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
-    <Property Name="USER_LNAME" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
-    <Property Name="USER_DISPLAYNAME" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
-    <Property Name="REPUTATION" Type="Int32" Nullable="false" />
-    <Property Name="USER_EMAIL" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
-    <Property Name="CREATED_TIMESTAMP" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="USER_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="USER_FNAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="USER_LNAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="USER_DISPLAYNAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="REPUTATION" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USER_EMAIL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CREATED_TIMESTAMP" Type="DateTime" Precision="3" />
     <NavigationProperty Name="BOOKs" Relationship="BooksDBModel.FK_BOOK_USER" FromRole="USER" ToRole="BOOK" />
   </EntityType>
   <Association Name="FK_BOOK_CATEGORY">
