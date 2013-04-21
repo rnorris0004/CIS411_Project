@@ -26,7 +26,7 @@ namespace CIS411_Project.dal
         public string PASSWORD { get; set; }
         public int REPUTATION { get; set; }
         public string USER_EMAIL { get; set; }
-        public byte[] CREATED_TIMESTAMP { get; set; }
+        public DateTime CREATED_TIMESTAMP { get; set; }
     
         public virtual ICollection<BOOK> BOOKs { get; set; }
     }

@@ -32,7 +32,8 @@ namespace CIS411_Project.Core.Models
 
         public decimal BOOK_PRICE { get; set; }
 
-        public byte[] CREATED_TIMESTAMP { get; set; }
+        public DateTime CREATED_TIMESTAMP { get; set; }
+        
 
 
     }

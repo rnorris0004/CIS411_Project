@@ -26,7 +26,7 @@ namespace CIS411_Project.dal
         public int CATEGORY_ID { get; set; }
         public int USER_ID { get; set; }
         public decimal BOOK_PRICE { get; set; }
-        public byte[] CREATED_TIMESTAMP { get; set; }
+        public DateTime CREATED_TIMESTAMP { get; set; }
     
         public virtual CATEGORY CATEGORY { get; set; }
         public virtual CONDITION CONDITION { get; set; }

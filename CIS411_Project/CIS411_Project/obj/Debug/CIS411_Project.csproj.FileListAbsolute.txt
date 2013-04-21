@@ -31,10 +31,13 @@ C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Projec
 C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project\obj\Debug\CIS411_Project.dll
 C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project\obj\Debug\CIS411_Project.pdb
 C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project\obj\Debug\CIS411_Project.csprojResolveAssemblyReference.cache
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\obj\Debug\CIS411_Project.csprojResolveAssemblyReference.cache
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.pdb
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Antlr3.Runtime.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.Core.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\EntityFramework.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Helpers.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Microsoft.QualityTools.Testing.Fakes.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Newtonsoft.Json.dll
@@ -50,6 +53,9 @@ C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\System.Web.WebPages.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\System.Web.WebPages.Razor.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\WebGrease.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.dal.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.Core.pdb
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Helpers.pdb
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\EntityFramework.xml
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\System.Web.Optimization.1.0.0.0.Fakes.xml
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Newtonsoft.Json.xml
@@ -62,12 +68,6 @@ C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\System.Web.WebPages.xml
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\System.Web.WebPages.Razor.xml
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.dal.pdb
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\obj\Debug\CIS411_Project.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\obj\Debug\CIS411_Project.pdb
-C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.Core.dll
-C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.Core.pdb
-C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\obj\Debug\CIS411_Project.csprojResolveAssemblyReference.cache
-C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.dal.dll
-C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\CIS411_Project.dal.pdb
-C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Helpers.dll
-C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project\bin\Helpers.pdb
