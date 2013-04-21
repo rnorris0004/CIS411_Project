@@ -12,8 +12,11 @@ namespace CIS411_Project.Core.Models
     public class User
     {
         [Required]
+        [Display(Name = "First Name")]
         public string USER_FNAME { get; set; }
+
         [Required]
+        [Display(Name = "Last Name")]
         public string USER_LNAME { get; set; }
 
         [Required]
@@ -28,6 +31,7 @@ namespace CIS411_Project.Core.Models
         public int REPUTATION { get; set; }
 
         [Required]
+        [Display(Name = "EMail")]
         public string EMAIL { get; set; }
 
         public DateTime CREATED_TIMESTAMP { get; set; }
