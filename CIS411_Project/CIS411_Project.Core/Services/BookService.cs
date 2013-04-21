@@ -92,23 +92,24 @@ namespace CIS411_Project.Core.Services
             return book;
         }
 
-        public User insertUser(User newUser)
-        {
-            User user2add = newUser;
-            USER u3 = null;
-            UserRepo userRepo = new UserRepo();
-
-            u3.USER_FNAME = newUser.USER_FNAME;
-            u3.USER_LNAME = newUser.USER_LNAME;
-            u3.USER_EMAIL = newUser.EMAIL;
-            u3.USER_DISPLAYNAME = newUser.USER_DISPLAYNAME;
-            u3.PASSWORD = newUser.PASSWORD;
-            u3.CREATED_TIMESTAMP = DateTime.Now;
-            userRepo.add(u3);
 
 
-            return newUser;
-        }
 
+        //public ICollection<PhoneCodeModel> getPhoneCds()
+        //{
+        //    ICollection<PhoneCodeModel> codeModels = new List<PhoneCodeModel>();
+
+        //    PhoneCodeRepo repo = new PhoneCodeRepo();
+        //    PhoneCD[] codes = repo.getAll();
+        //    foreach (PhoneCD codeData in codes)
+        //    {
+        //        PhoneCodeModel codeModel = new PhoneCodeModel();
+        //        codeModel.lastModifiedDate = codeData.MOD_DT;
+        //        codeModel.phoneCode = codeData.PHONE_CD;
+        //        codeModel.phoneCodeDescription = codeData.PHONE_TX;
+        //        codeModels.Add(codeModel);
+        //    }
+        //    return codeModels;
+        //}
     }
 }

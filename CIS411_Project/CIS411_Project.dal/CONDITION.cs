@@ -19,7 +19,7 @@ namespace CIS411_Project.dal
             this.BOOKs = new HashSet<BOOK>();
         }
     
-        public decimal CONDITION_ID { get; set; }
+        public int CONDITION_ID { get; set; }
         public string CONDITION_NAME { get; set; }
         public string CONDITION_DESC { get; set; }
     

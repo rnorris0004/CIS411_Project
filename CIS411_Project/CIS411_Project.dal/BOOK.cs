@@ -14,19 +14,19 @@ namespace CIS411_Project.dal
     
     public partial class BOOK
     {
-        public decimal BOOK_ID { get; set; }
+        public int BOOK_ID { get; set; }
         public string BOOK_TITLE { get; set; }
         public string BOOK_DESC { get; set; }
         public string BOOK_AUTHOR { get; set; }
-        public Nullable<decimal> BOOK_EDITION { get; set; }
+        public Nullable<int> BOOK_EDITION { get; set; }
+        public string BOOK_PUBLISHER { get; set; }
         public Nullable<decimal> ISBN10 { get; set; }
         public Nullable<decimal> ISBN13 { get; set; }
-        public decimal CONDITION_ID { get; set; }
-        public decimal CATEGORY_ID { get; set; }
-        public decimal USER_ID { get; set; }
-        public Nullable<decimal> BOOK_PRICE { get; set; }
-        public Nullable<System.DateTime> CREATED_TIMESTAMP { get; set; }
-        public string BOOK_PUBLISHER { get; set; }
+        public int CONDITION_ID { get; set; }
+        public int CATEGORY_ID { get; set; }
+        public int USER_ID { get; set; }
+        public decimal BOOK_PRICE { get; set; }
+        public byte[] CREATED_TIMESTAMP { get; set; }
     
         public virtual CATEGORY CATEGORY { get; set; }
         public virtual CONDITION CONDITION { get; set; }

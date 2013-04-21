@@ -19,14 +19,14 @@ namespace CIS411_Project.dal
             this.BOOKs = new HashSet<BOOK>();
         }
     
-        public decimal USER_ID { get; set; }
+        public int USER_ID { get; set; }
         public string USER_FNAME { get; set; }
         public string USER_LNAME { get; set; }
         public string USER_DISPLAYNAME { get; set; }
         public string PASSWORD { get; set; }
-        public Nullable<decimal> REPUTATION { get; set; }
+        public int REPUTATION { get; set; }
         public string USER_EMAIL { get; set; }
-        public Nullable<System.DateTime> CREATED_TIMESTAMP { get; set; }
+        public byte[] CREATED_TIMESTAMP { get; set; }
     
         public virtual ICollection<BOOK> BOOKs { get; set; }
     }

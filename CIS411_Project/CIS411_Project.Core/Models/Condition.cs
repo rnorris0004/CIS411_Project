@@ -7,7 +7,7 @@ namespace CIS411_Project.Core.Models
 {
     public class Condition
     {
-        public decimal CONDITION_ID { get; set; }
+        public int CONDITION_ID { get; set; }
 
         public string CONDITION_NAME { get; set; }
 

@@ -12,10 +12,8 @@ namespace CIS411_Project.Core.Models
     public class User
     {
         [Required]
-        [Display(Name = "First Name")]
         public string USER_FNAME { get; set; }
         [Required]
-        [Display(Name = "Last Name")]
         public string USER_LNAME { get; set; }
 
         [Required]
