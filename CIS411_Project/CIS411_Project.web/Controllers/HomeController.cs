@@ -13,7 +13,7 @@ namespace CIS411_Project.web.Controllers
 
         public ActionResult Index()
         {
-            
+            ViewBag.mess = "Hello";   
             return View();
         }
 
