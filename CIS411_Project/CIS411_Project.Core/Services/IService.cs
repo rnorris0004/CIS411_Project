@@ -12,6 +12,7 @@ namespace CIS411_Project.Core.Services
         ICollection<Books> listBooks();
         ICollection<Books> listBooksByUser(int userId);
         Books getBookById(int bookId);
+        User insertUser(User newUser);
         //ICollection<Condition> getBookCondition();
         //ICollection<Category> getBookCategory();
     }

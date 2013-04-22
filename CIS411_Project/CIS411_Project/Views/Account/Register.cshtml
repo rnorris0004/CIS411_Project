@@ -6,6 +6,8 @@
 
 @using (Html.BeginForm())
 {
+    @Html.AntiForgeryToken()   
+    @Html.ValidationSummary()
     <div>
         <fieldset>
             <legend>Register</legend>
@@ -47,4 +49,8 @@
             <input type="submit" value="Register" />
         </fieldset>
     </div>
+}
+
+@section Scripts {
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
 }

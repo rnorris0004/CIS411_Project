@@ -42,12 +42,34 @@ namespace CIS411_Project.Controllers
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");
         }
+
         [HttpGet]
         public ActionResult Register()
         {
             ViewBag.Message = "Your app description page.";
 
             return View();
+        }
+        [HttpPost]
+        //[ValidateAntiForgeryToken]
+        //[AllowAnonymous]
+        public ActionResult Register(User model)
+        {
+            if (ModelState.IsValid)
+            {
+                // Attempt to register the user
+                {
+                    IService service = new BookService();
+                    service.insertUser(model);
+                    return RedirectToAction("Index", "Home");
+
+                }
+                
+            }
+
+            // If we got this far, something failed, redisplay form
+            return View(model);
+
         }
 
     }
