@@ -11,6 +11,8 @@ namespace CIS411_Project.Core.Models
 {
     public class User
     {
+        public decimal USER_ID { get; set; }
+
         [Required]
         [Display(Name = "First Name")]
         public string USER_FNAME { get; set; }
@@ -28,7 +30,7 @@ namespace CIS411_Project.Core.Models
         [Display(Name = "Password")]
         public string PASSWORD { get; set; }
 
-        public int REPUTATION { get; set; }
+        public Nullable<decimal> REPUTATION { get; set; }
 
         [Required]
         [Display(Name = "EMail")]
@@ -54,7 +56,7 @@ namespace CIS411_Project.Core.Models
                     .Value = _username;
                 cmd.Parameters
                     .Add(new SqlParameter("@p", SqlDbType.NVarChar))
-                    .Value = Helpers.SHA1.Encode(_password);
+                    .Value = _password;
                 cn.Open();
                 var reader = cmd.ExecuteReader();
                 if (reader.HasRows)

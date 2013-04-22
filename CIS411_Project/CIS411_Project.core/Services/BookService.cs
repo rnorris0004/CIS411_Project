@@ -36,7 +36,7 @@ namespace CIS411_Project.Core.Services
                 book.CATEGORY_ID = b1.CATEGORY_ID;
                 book.CONDITION_ID = b1.CONDITION_ID;
                 book.CREATED_TIMESTAMP = b1.CREATED_TIMESTAMP;
-                
+
                 bookList.Add(book);
             }
             BookRepo = null;
@@ -75,7 +75,7 @@ namespace CIS411_Project.Core.Services
         public Books getBookById(int bookId)
         {
             BookRepo bookRepo = new BookRepo();
-            BOOK b3 = bookRepo.getById(new BOOK{BOOK_ID=bookId});
+            BOOK b3 = bookRepo.getById(new BOOK { BOOK_ID = bookId });
             Books book = new Books();
             book.BOOK_ID = b3.BOOK_ID;
             book.BOOK_TITLE = b3.BOOK_TITLE;
@@ -97,15 +97,14 @@ namespace CIS411_Project.Core.Services
             User user2add = newUser;
             USER u3 = null;
             UserRepo userRepo = new UserRepo();
-            DateTime dt = DateTime.Now;
-            long a = dt.Ticks;
+          
 
             u3.USER_FNAME = newUser.USER_FNAME;
             u3.USER_LNAME = newUser.USER_LNAME;
             u3.USER_EMAIL = newUser.EMAIL;
             u3.USER_DISPLAYNAME = newUser.USER_DISPLAYNAME;
             u3.PASSWORD = newUser.PASSWORD;
-            u3.CREATED_TIMESTAMP = BitConverter.GetBytes(a);
+            u3.CREATED_TIMESTAMP = DateTime.Now;
             userRepo.add(u3);
 
 

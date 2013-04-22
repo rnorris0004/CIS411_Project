@@ -22,6 +22,5 @@ C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.web\bin\System.Web.WebPages.xml
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.web\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.web\bin\System.Web.WebPages.Razor.xml
-C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.web\obj\Debug\CIS411_Project.web.csprojResolveAssemblyReference.cache
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.web\obj\Debug\CIS411_Project.web.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.web\obj\Debug\CIS411_Project.web.pdb
