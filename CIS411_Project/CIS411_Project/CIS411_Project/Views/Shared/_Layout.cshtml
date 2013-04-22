@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - TextBookTrader</title> 
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @System.Web.Optimization.Styles.Render("~/Content/Site.css")
+    </head>
+ <body>
+     <div style="width: auto; background-color: #728ea7;">
+    @if (Request.IsAuthenticated) {
+        <strong>@Html.Encode(User.Identity.Name)</strong>
+        @Html.ActionLink("Sign Out", "Logout", "Account")
+    }
+    else {
+        @Html.ActionLink("Register", "Register", "Account")
+        <span> | </span>
+        @Html.ActionLink("Sign In", "Login", "Account")
+    }
+</div> 
+
+    <header>
+            <div class="content-wrapper">
+                <div class="float-left"><br />
+                    <p class="site-title">@Html.ActionLink("TextBookTrader", "Index", "Home")</p> <br />
+                    Welcome to Text Book Trader! Have unwanted text books lying around? <br />
+                    Trying to find a good deal on next semester's books? Check listings from students just like you!
+                </div>
+                <div class="float-right">
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                        @Html.Partial("_Search")
+                    </nav>
+                </div>
+            </div>
+        </header>
+     
+     <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+ </body>
+</html>

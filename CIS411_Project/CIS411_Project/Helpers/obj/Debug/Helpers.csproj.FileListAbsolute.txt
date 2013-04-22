@@ -1,0 +1,5 @@
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\Helpers\bin\Debug\Helpers.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\Helpers\bin\Debug\Helpers.pdb
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\Helpers\obj\Debug\Helpers.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\Helpers\obj\Debug\Helpers.pdb
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\Helpers\obj\Debug\Helpers.csprojResolveAssemblyReference.cache

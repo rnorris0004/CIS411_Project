@@ -1,0 +1,17 @@
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.Core.dll
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.Core.pdb
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.dll
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.pdb
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.csprojResolveAssemblyReference.cache
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.Core.dll.config
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.Core.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.Core.pdb
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.dal.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\EntityFramework.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\Helpers.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\CIS411_Project.dal.pdb
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\Helpers.pdb
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\bin\Debug\EntityFramework.xml
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.csprojResolveAssemblyReference.cache
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.dll
+C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.Core\obj\Debug\CIS411_Project.Core.pdb
