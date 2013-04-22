@@ -51,8 +51,8 @@ namespace CIS411_Project.Controllers
             return View();
         }
         [HttpPost]
-        //[ValidateAntiForgeryToken]
-        //[AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public ActionResult Register(User model)
         {
             if (ModelState.IsValid)

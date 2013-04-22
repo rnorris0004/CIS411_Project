@@ -93,6 +93,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dal\BookTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +103,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CIS411_Project.Core\CIS411_Project.Core.csproj">
+      <Project>{5fb3244a-e4ed-4154-9ba8-dad9979e5115}</Project>
+      <Name>CIS411_Project.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CIS411_Project.dal\CIS411_Project.dal.csproj">
+      <Project>{e2051cd9-cd0a-4046-8bc5-acc2bf94a72e}</Project>
+      <Name>CIS411_Project.dal</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CIS411_Project\CIS411_Project.csproj">
       <Project>{622AAFC3-A2C8-432B-ACDA-F9DBECF77D19}</Project>
       <Name>CIS411_Project</Name>
