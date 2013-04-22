@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CIS411_Project.Core")]
+[assembly: AssemblyTitle("CIS411_Project.test")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CIS411_Project.Core")]
+[assembly: AssemblyProduct("CIS411_Project.test")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b58de1e2-68f8-4e88-b82b-e4ee00a4f284")]
+[assembly: Guid("3df371ce-c3d2-4d1f-9910-f4ad6f346e6f")]
 
 // Version information for an assembly consists of the following four values:
 //

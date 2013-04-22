@@ -19,7 +19,7 @@ namespace CIS411_Project.dal
             this.BOOKs = new HashSet<BOOK>();
         }
     
-        public int CATEGORY_ID { get; set; }
+        public decimal CATEGORY_ID { get; set; }
         public string CATEGORY_NAME { get; set; }
     
         public virtual ICollection<BOOK> BOOKs { get; set; }

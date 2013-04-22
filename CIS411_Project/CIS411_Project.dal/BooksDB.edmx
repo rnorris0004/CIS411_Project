@@ -28,34 +28,34 @@
           <Key>
             <PropertyRef Name="BOOK_ID" />
           </Key>
-          <Property Name="BOOK_ID" Type="int" Nullable="false" />
+          <Property Name="BOOK_ID" Type="decimal" Nullable="false" />
           <Property Name="BOOK_TITLE" Type="nvarchar" MaxLength="50" />
           <Property Name="BOOK_DESC" Type="nvarchar(max)" />
           <Property Name="BOOK_AUTHOR" Type="nvarchar" MaxLength="50" />
-          <Property Name="BOOK_EDITION" Type="int" />
+          <Property Name="BOOK_EDITION" Type="decimal" />
           <Property Name="BOOK_PUBLISHER" Type="nvarchar" MaxLength="50" />
-          <Property Name="ISBN10" Type="numeric" Precision="10" />
-          <Property Name="ISBN13" Type="numeric" Precision="13" />
-          <Property Name="CONDITION_ID" Type="int" Nullable="false" />
-          <Property Name="CATEGORY_ID" Type="int" Nullable="false" />
-          <Property Name="USER_ID" Type="int" Nullable="false" />
-          <Property Name="BOOK_PRICE" Type="money" Nullable="false" />
-          <Property Name="CREATED_TIMESTAMP" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="ISBN10" Type="decimal" />
+          <Property Name="ISBN13" Type="decimal" />
+          <Property Name="CONDITION_ID" Type="decimal" Nullable="false" />
+          <Property Name="CATEGORY_ID" Type="decimal" Nullable="false" />
+          <Property Name="USER_ID" Type="decimal" Nullable="false" />
+          <Property Name="BOOK_PRICE" Type="float" />
+          <Property Name="CREATED_TIMESTAMP" Type="datetime" />
         </EntityType>
         <EntityType Name="CATEGORY">
           <Key>
             <PropertyRef Name="CATEGORY_ID" />
           </Key>
-          <Property Name="CATEGORY_ID" Type="int" Nullable="false" />
-          <Property Name="CATEGORY_NAME" Type="nchar" Nullable="false" MaxLength="50" />
+          <Property Name="CATEGORY_ID" Type="decimal" Nullable="false" />
+          <Property Name="CATEGORY_NAME" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="CONDITION">
           <Key>
             <PropertyRef Name="CONDITION_ID" />
           </Key>
-          <Property Name="CONDITION_ID" Type="int" Nullable="false" />
-          <Property Name="CONDITION_NAME" Type="nchar" Nullable="false" MaxLength="50" />
-          <Property Name="CONDITION_DESC" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CONDITION_ID" Type="decimal" Nullable="false" />
+          <Property Name="CONDITION_NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="CONDITION_DESC" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -71,13 +71,14 @@
           <Key>
             <PropertyRef Name="USER_ID" />
           </Key>
-          <Property Name="USER_ID" Type="int" Nullable="false" />
-          <Property Name="USER_FNAME" Type="nchar" Nullable="false" MaxLength="25" />
-          <Property Name="USER_LNAME" Type="nchar" Nullable="false" MaxLength="25" />
-          <Property Name="USER_DISPLAYNAME" Type="nchar" Nullable="false" MaxLength="25" />
-          <Property Name="REPUTATION" Type="int" Nullable="false" />
-          <Property Name="USER_EMAIL" Type="nchar" Nullable="false" MaxLength="50" />
-          <Property Name="CREATED_TIMESTAMP" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="USER_ID" Type="decimal" Nullable="false" />
+          <Property Name="USER_FNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="USER_LNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="USER_DISPLAYNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="PASSWORD" Type="nvarchar" MaxLength="50" />
+          <Property Name="REPUTATION" Type="decimal" />
+          <Property Name="USER_EMAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="CREATED_TIMESTAMP" Type="datetime" />
         </EntityType>
         <Association Name="FK_BOOK_CATEGORY">
           <End Role="CATEGORY" Type="BooksDBModel.Store.CATEGORY" Multiplicity="1" />
@@ -143,19 +144,19 @@
           <Key>
             <PropertyRef Name="BOOK_ID" />
           </Key>
-          <Property Name="BOOK_ID" Type="Int32" Nullable="false" />
+          <Property Name="BOOK_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
           <Property Name="BOOK_TITLE" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="BOOK_DESC" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
           <Property Name="BOOK_AUTHOR" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-          <Property Name="BOOK_EDITION" Type="Int32" />
+          <Property Name="BOOK_EDITION" Type="Decimal" Precision="18" Scale="0" />
           <Property Name="BOOK_PUBLISHER" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-          <Property Name="ISBN10" Type="Decimal" Precision="10" Scale="0" />
-          <Property Name="ISBN13" Type="Decimal" Precision="13" Scale="0" />
-          <Property Name="CONDITION_ID" Type="Int32" Nullable="false" />
-          <Property Name="CATEGORY_ID" Type="Int32" Nullable="false" />
-          <Property Name="USER_ID" Type="Int32" Nullable="false" />
-          <Property Name="BOOK_PRICE" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
-          <Property Name="CREATED_TIMESTAMP" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ISBN10" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="ISBN13" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CONDITION_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="CATEGORY_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="USER_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="BOOK_PRICE" Type="Double" />
+          <Property Name="CREATED_TIMESTAMP" Type="DateTime" Precision="3" />
           <NavigationProperty Name="CATEGORY" Relationship="BooksDBModel.FK_BOOK_CATEGORY" FromRole="BOOK" ToRole="CATEGORY" />
           <NavigationProperty Name="CONDITION" Relationship="BooksDBModel.FK_BOOK_CONDITION" FromRole="BOOK" ToRole="CONDITION" />
           <NavigationProperty Name="USER" Relationship="BooksDBModel.FK_BOOK_USER" FromRole="BOOK" ToRole="USER" />
@@ -164,17 +165,17 @@
           <Key>
             <PropertyRef Name="CATEGORY_ID" />
           </Key>
-          <Property Name="CATEGORY_ID" Type="Int32" Nullable="false" />
-          <Property Name="CATEGORY_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
+          <Property Name="CATEGORY_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="CATEGORY_NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
           <NavigationProperty Name="BOOKs" Relationship="BooksDBModel.FK_BOOK_CATEGORY" FromRole="CATEGORY" ToRole="BOOK" />
         </EntityType>
         <EntityType Name="CONDITION">
           <Key>
             <PropertyRef Name="CONDITION_ID" />
           </Key>
-          <Property Name="CONDITION_ID" Type="Int32" Nullable="false" />
-          <Property Name="CONDITION_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
-          <Property Name="CONDITION_DESC" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="CONDITION_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="CONDITION_NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CONDITION_DESC" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
           <NavigationProperty Name="BOOKs" Relationship="BooksDBModel.FK_BOOK_CONDITION" FromRole="CONDITION" ToRole="BOOK" />
         </EntityType>
         <EntityType Name="sysdiagram">
@@ -191,13 +192,14 @@
           <Key>
             <PropertyRef Name="USER_ID" />
           </Key>
-          <Property Name="USER_ID" Type="Int32" Nullable="false" />
-          <Property Name="USER_FNAME" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
-          <Property Name="USER_LNAME" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
-          <Property Name="USER_DISPLAYNAME" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
-          <Property Name="REPUTATION" Type="Int32" Nullable="false" />
-          <Property Name="USER_EMAIL" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
-          <Property Name="CREATED_TIMESTAMP" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="USER_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="USER_FNAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="USER_LNAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="USER_DISPLAYNAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="REPUTATION" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="USER_EMAIL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CREATED_TIMESTAMP" Type="DateTime" Precision="3" />
           <NavigationProperty Name="BOOKs" Relationship="BooksDBModel.FK_BOOK_USER" FromRole="USER" ToRole="BOOK" />
         </EntityType>
         <Association Name="FK_BOOK_CATEGORY">
@@ -296,6 +298,7 @@
                 <ScalarProperty Name="USER_FNAME" ColumnName="USER_FNAME" />
                 <ScalarProperty Name="USER_LNAME" ColumnName="USER_LNAME" />
                 <ScalarProperty Name="USER_DISPLAYNAME" ColumnName="USER_DISPLAYNAME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
                 <ScalarProperty Name="REPUTATION" ColumnName="REPUTATION" />
                 <ScalarProperty Name="USER_EMAIL" ColumnName="USER_EMAIL" />
                 <ScalarProperty Name="CREATED_TIMESTAMP" ColumnName="CREATED_TIMESTAMP" />
