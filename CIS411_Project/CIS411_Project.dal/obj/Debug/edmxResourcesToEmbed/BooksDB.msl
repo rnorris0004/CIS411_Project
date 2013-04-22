@@ -55,6 +55,7 @@
           <ScalarProperty Name="USER_FNAME" ColumnName="USER_FNAME" />
           <ScalarProperty Name="USER_LNAME" ColumnName="USER_LNAME" />
           <ScalarProperty Name="USER_DISPLAYNAME" ColumnName="USER_DISPLAYNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
           <ScalarProperty Name="REPUTATION" ColumnName="REPUTATION" />
           <ScalarProperty Name="USER_EMAIL" ColumnName="USER_EMAIL" />
           <ScalarProperty Name="CREATED_TIMESTAMP" ColumnName="CREATED_TIMESTAMP" />
