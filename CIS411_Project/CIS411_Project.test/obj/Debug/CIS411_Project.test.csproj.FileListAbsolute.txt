@@ -2,3 +2,7 @@ C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.test\bin\Debug\CIS411_Project.test.pdb
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.test\obj\Debug\CIS411_Project.test.dll
 C:\Users\Scott\Documents\Code_Projects\Repository\CIS411_Project\CIS411_Project.test\obj\Debug\CIS411_Project.test.pdb
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project.test\bin\Debug\CIS411_Project.test.dll
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project.test\bin\Debug\CIS411_Project.test.pdb
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project.test\obj\Debug\CIS411_Project.test.dll
+C:\Users\Jordan\Desktop\U of L school dropbox\Dropbox\Spring 2013\CIS 411\Project\CIS411_Project\CIS411_Project.test\obj\Debug\CIS411_Project.test.pdb
